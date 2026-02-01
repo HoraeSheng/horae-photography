@@ -25,7 +25,8 @@ collections:
   - name: "about"
     label: "👤 关于我"
     files:
-      - file: "content/about.json"
+      - name: "about"                 # ✅ 必须：files项需要唯一name
+        file: "content/about.json"
         label: "个人信息"
         fields:
           - { label: "名字", name: "name", widget: "string" }
@@ -42,7 +43,8 @@ collections:
   - name: "contact"
     label: "📧 联系方式"
     files:
-      - file: "content/contact.json"
+      - name: "contact"               # ✅ 必须：files项需要唯一name
+        file: "content/contact.json"
         label: "联系信息"
         fields:
           - { label: "邮箱", name: "email", widget: "string" }
@@ -53,7 +55,8 @@ collections:
   - name: "hero"
     label: "🏠 首页"
     files:
-      - file: "content/hero.json"
+      - name: "hero"                  # ✅ 必须：files项需要唯一name
+        file: "content/hero.json"
         label: "首页内容"
         fields:
           - { label: "问候语", name: "greeting", widget: "string" }
